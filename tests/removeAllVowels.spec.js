@@ -7,4 +7,9 @@ describe('removeAllVowels Filter', function () {
 		$filter = $injector.get('$filter');
 	}));
 
+it('should remove vowels', function(){
+	var outcome = $filter("removeAllVowels")("atom");
+	expect(outcome).toEqual("tm");
+});
+
 });
